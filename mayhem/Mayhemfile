@@ -1,0 +1,9 @@
+project: toml
+target: fuzz-api
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_toml.py
+    libfuzzer: true
+    timeout: 6
